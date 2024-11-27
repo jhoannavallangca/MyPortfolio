@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <aside>
+        <img src="profile.jpeg" alt="Profile Picture" class="profile-picture">
+        <ul class="Links">
+            <li class="activeLink">
+                <a href="#home"><i class="fas fa-house"></i><p>Home</p></a>
+            </li>
+            <li>
+                <a href="#projects"><i class="fas fa-user"></i><p>Projects</p></a>
+            </li>
+            <li>
+                <a href="#contacts"><i class="fas fa-comments"></i><p>Contacts</p></a>
+            </li>
+        </ul>
+    </aside>
+    
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <br>
+            <h1>Hi! I'm <span>Jhoanna Mae Tapaya</span>,</h1>
+            <p> 
+                 A <strong>Web Developer</strong> 
+                 with a strong passion for web development and innovative 
+                 digital solutions. My expertise lies in creating functional, 
+                 aesthetically pleasing, and user-friendly websites. With a solid
+                  foundation in IT and attention to detail, I aim to deliver projects 
+                  that seamlessly blend technical proficiency with creativity. 
+                  I invite you to explore my work and connect for potential collaborations. </p>
+            
+            <!-- Boxes for Resume, Hobbies, Album, Skills & Abilities -->
+            <div class="box-container">
+                <!-- Resume Box -->
+                <div class="box" id="resumeBox">
+                    <h3>Resume</h3>
+                    <img src="img/resume.png" alt="Resume Icon" onclick="openModal('resumeModal')">
+                </div>
+            
+                <!-- Hobbies Box -->
+                <div class="box" id="hobbiesBox">
+                    <h3>Hobbies</h3>
+                    <img src="img/hobby-removebg-preview.png" alt="Hobbies Icon" onclick="openModal('hobbiesModal')">
+                </div>
+            
+                <!-- Album Box -->
+                <div class="box" id="albumBox">
+                    <h3>Album</h3>
+                    <img src="img/album.png" alt="Album Icon" onclick="openModal('albumModal')">
+                </div>
+            
+                <!-- Skills & Abilities Box -->
+                <div class="box" id="skillsBox">
+                    <h3>Skills</h3>
+                    <img src="img/skills.png" alt="Skills Icon" onclick="openModal('skillsModal')">
+                </div>
+            </div>
+            
+            <!-- Resume Modal -->
+            <div id="resumeModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('resumeModal')">&times;</span>
+                    <h3>My Resume</h3>
+                    <a href="resume.html" target="_blank"><button>View my Resume Here!</button></a>
+                </div>
+            </div>
+            
+            <!-- Hobbies Modal -->
+<div id="hobbiesModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal('hobbiesModal')">&times;</span>
+        <h3>My Hobbies</h3>
+        
+        <div class="hobbies-container">
+            <!--languages -->
+            <div class="hobby">
+                <img src="img/languages.jpg" alt="Photography" class="hobby-img" />
+                <h4>Learning Different Languages</h4>
+                <p>Expanding my cultural understanding and communication skills by learning new languages.</p>
+            </div>
+            
+            <!-- watching-->
+            <div class="hobby">
+                <img src="img/watching.jpg" alt="Hiking" class="hobby-img" />
+                <h4>Watching</h4>
+            <p>Enjoying K-Dramas, C-Dramas, movies, and Disney classics to unwind and explore different cultures through entertainment.</p>
+            </div>
+            
+            <!-- Singing -->
+            <div class="hobby">
+                <img src="img/singing.webp" alt="Reading Science Fiction" class="hobby-img" />
+                <h4>Singing</h4>
+                <p>Enjoying singing as a fun way to express myself, even though I'm still improving my skills.</p>
+
+            </div>
+            
+            <!-- Nail Arts -->
+            <div class="hobby">
+                <img src="img/nailart.jpg" alt="Exploring New Places" class="hobby-img" />
+                <h4>Nail Art Designing</h4>
+                <p>Expressing creativity through intricate nail designs, experimenting with colors, patterns, and techniques.</p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+            
+            <!-- Album Modal -->
+            <div id="albumModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('albumModal')">&times;</span>
+                    <h3>My Album</h3>
+                    <p>"Time flies so fast, and as we grow, we treasure 
+                    the memories of our loved ones and the moments that define our journey."</p>
+
+                    <div class="image-gallery">
+                        <img src="img/1.jpg" alt="Travel Image 1" />
+                        <img src="img/2.jpg" alt="Travel Image 2" />
+                        <img src="img/now.jpg" alt="Travel Image 3" />
+                        <img src="img/fam1.jpg" alt="Travel Image 1" />
+                        <img src="img/me1.jpg" alt="Travel Image 2" />
+                        <img src="img/br1.jpg" alt="Travel Image 3" />
+                        <img src="img/br2.jpg" alt="Travel Image 1" />
+                        <img src="img/br4.jpg" alt="Travel Image 2" />
+                        <img src="img/m1.jpg" alt="Travel Image 3" />
+                        <img src="img/b1.jpg" alt="Travel Image 1" />
+                        <img src="img/b2.jpg" alt="Travel Image 2" />
+                        <img src="img/b3.jpg" alt="Travel Image 3" />
+                        <img src="img/img1.jpg" alt="Travel Image 1" />
+                        <img src="img/img2.jpg" alt="Travel Image 2" />
+                        <img src="img/img3 (2).jpg" alt="Travel Image 3" />
+                        <img src="img/img3.jpg" alt="Travel Image 1" />
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Modal -->
+            <div id="skillsModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" onclick="closeModal('skillsModal')">&times;</span>
+                    <h3>Skills & Abilities</h3>
+                    <ul>
+                        <li>
+                            <strong>HTML</strong>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 100%;"></div> <!-- 100% knowledge -->
+                            </div>
+                            <span class="skill-percentage">100%</span>
+                        </li>
+                        
+                        <li>
+                            <strong>CSS</strong>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div> <!-- 95% knowledge -->
+                            </div>
+                            <span class="skill-percentage">95%</span>
+                        </li>
+                        <li>
+                            <strong>JavaScript</strong>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;"></div> <!-- 85% knowledge -->
+                            </div>
+                            <span class="skill-percentage">85%</span>
+                        </li>
+                        <li>
+                            <strong>React</strong>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div> <!-- 80% knowledge -->
+                            </div>
+                            <span class="skill-percentage">80%</span>
+                        </li>
+                        <li>Database Management (SQL, MongoDB)
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%;"></div> <!-- 85% knowledge -->
+                                </div>
+                                <span class="skill-percentage">85%</span>
+                        </li>
+                        <div class="skills-section">
+                            <div class="skills-category">
+                                <h3>Core Skills</h3>
+                                <ul>
+                                    <li>Problem-Solving and Analytical Thinking</li>
+                                    <li>Team Collaboration and Communication</li>
+                                    <li>Adaptability and Flexibility</li>
+                                    <li>Customer Service</li>
+                                </ul>
+                            </div>
+                            <div class="skills-category">
+                                <h3>Technical Skills</h3>
+                                <ul>
+                                    <li>Microsoft Office Suite (Excel, Word, PowerPoint, etc.)</li>
+                                    <li>Data Entry and Accuracy</li>
+                                    <li>Inventory Management</li>
+                                </ul>
+                            </div>
+                            <div class="skills-category">
+                                <h3>Soft Skills</h3>
+                                <ul>
+                                    <li>Strong Communication Skills</li>
+                                    <li>Time Management and Organizational Skills</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </ul>
+                </div>
+            </div>
+            
+            </div>
+        
+            <!-- Content Sections to Show After Click -->
+            <div id="resumeContent" class="content-box">
+                <h2>My Resume</h2>
+                <p>Here’s a link to my detailed resume...</p>
+            </div>
+            
+            <div id="albumContent" class="content-box">
+                <h2>My Album</h2>
+                <div class="image-gallery">
+                    <!-- Upper Row -->
+                    <img src="image1.jpg" alt="Image 1">
+                    <img src="image2.jpg" alt="Image 2">
+                    <img src="image3.jpg" alt="Image 3">
+                    <img src="image4.jpg" alt="Image 4">
+                    <!-- Lower Row -->
+                    <img src="image5.jpg" alt="Image 5">
+                    <img src="image6.jpg" alt="Image 6">
+                    <img src="image7.jpg" alt="Image 7">
+                    <img src="image8.jpg" alt="Image 8">
+                </div>
+                
+            </div>
+            <div id="skillsContent" class="content-box">
+                <h2>My Skills & Abilities</h2>
+                <p>Here are some of my technical skills...</p>
+            </div>
+        </section>
+        
+
+        <!-- Projects Section -->
+<!-- Projects Section -->
+<section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div id="js-splide" class="splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <!-- Project 1 -->
+          <li class="splide__slide">
+            <div class="card">
+              <img src="img/pngwing.com.png" alt="Portfolio Website">
+              <div class="card__content">
+                <h3 class="card__title">Portfolio Website</h3>
+                <p class="card__excerpt">
+                  A sleek portfolio to showcase my work, built with HTML, CSS, and JavaScript.
+                </p>
+                <a href="https://your-portfolio-link.com" target="_blank" class="card__link">Live Demo</a>
+                <a href="https://github.com/your-username/portfolio" target="_blank" class="card__link">GitHub</a>
+              </div>
+            </div>
+          </li>
+  
+          <!-- Project 2 -->
+          <li class="splide__slide">
+            <div class="card">
+              <img src="img/pngwing.com (1).png" alt="E-commerce Store">
+              <div class="card__content">
+                <h3 class="card__title">E-commerce Store</h3>
+                <p class="card__excerpt">
+                  An online store with responsive design and dynamic features built using React and Node.js.
+                </p>
+                <a href="https://your-ecommerce-store-link.com" target="_blank" class="card__link">Live Demo</a>
+                <a href="https://github.com/your-username/e-commerce-store" target="_blank" class="card__link">GitHub</a>
+              </div>
+            </div>
+          </li>
+  
+          <!-- Project 3 -->
+          <li class="splide__slide">
+            <div class="card">
+              <img src="img/students-removebg-preview.png" alt="Student Portal">
+              <div class="card__content">
+                <h3 class="card__title">Student Portal</h3>
+                <p class="card__excerpt">
+                  A student portal to view grades, assignments, and announcements with real-time updates.
+                </p>
+                <a href="https://your-student-portal-link.com" target="_blank" class="card__link">Live Demo</a>
+                <a href="https://github.com/your-username/student-portal" target="_blank" class="card__link">GitHub</a>
+              </div>
+            </div>
+          </li>
+  
+          <!-- Project 4 -->
+          <li class="splide__slide">
+            <div class="card">
+              <img src="img/weatherapp.png" alt="Weather App">
+              <div class="card__content">
+                <h3 class="card__title">Weather App</h3>
+                <p class="card__excerpt">
+                  A weather application to check current conditions and forecasts using OpenWeather API.
+                </p>
+                <a href="https://your-weather-app-link.com" target="_blank" class="card__link">Live Demo</a>
+                <a href="https://github.com/your-username/weather-app" target="_blank" class="card__link">GitHub</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+
+  
+  
+          <!-- Add more projects similarly -->
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+        
+
+        <!-- Contacts Section -->
+        <section id="contacts" class="section contact-section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out! You can find and message me on:</p>
+            <div class="contact-card-container">
+                <!-- Email -->
+                <div class="contact-card">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p>
+                      <a >
+                        jhoannamaevallangca01@gmail.com
+                      </a>
+                    </p>
+                  </div>                  
+                  
+        
+                <!-- LinkedIn -->
+                <div class="contact-card">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <h3>LinkedIn</h3>
+                    <p><a  target="_blank">JMtapaya.com</a></p>
+                </div>
+        
+                <!-- Facebook -->
+                <div class="contact-card">
+                    <i class="fab fa-facebook contact-icon"></i>
+                    <h3>Facebook</h3>
+                    <p><a  target="_blank">Jhoanna Vallangca Tapaya</a></p>
+                </div>
+        
+                <!-- Contact Number -->
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <h3>Contact Number</h3>
+                    <p><a href="tel:+639066594947">+63-906-6594-947</a></p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
